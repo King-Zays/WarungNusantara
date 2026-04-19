@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Foto - WarungNusantara</title>
+  <meta name="description" content="Lihat galeri foto suasana dan masakan WarungNusantara. Dari dapur hingga penyajian, semuanya kami dokumentasikan.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="preloader"><div class="preloader-spinner"></div></div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <div class="brand-icon">🍽️</div>
+        WarungNusantara
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="order.html">Pemesanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+        <li class="breadcrumb-item active">Galeri</li>
+      </ol>
+    </nav>
+    <h1>Galeri <span style="color:var(--accent);">Foto</span></h1>
+    <p>Mari lihat olahan dan suasana dapur kami</p>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <div class="section-badge"><i class="bi bi-camera-fill"></i> Galeri</div>
+        <h2>Momen <span class="text-accent">Terbaik</span> Kami</h2>
+        <p>Klik foto untuk melihat lebih detail</p>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid" data-aos="fade-up">
+        <!-- Item 1 -->
+        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+          <img src="img/hero-food.png" alt="Hidangan Nusantara">
+          <div class="gallery-overlay">
+            <i class="bi bi-zoom-in gallery-icon"></i>
+            <h6>Hidangan Nusantara</h6>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+          <img src="img/nasi-goreng.png" alt="Nasi Goreng Spesial">
+          <div class="gallery-overlay">
+            <i class="bi bi-zoom-in gallery-icon"></i>
+            <h6>Nasi Goreng Spesial</h6>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+          <img src="img/rendang.png" alt="Rendang Padang">
+          <div class="gallery-overlay">
+            <i class="bi bi-zoom-in gallery-icon"></i>
+            <h6>Rendang Padang</h6>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+          <img src="img/sate-ayam.png" alt="Sate Ayam Madura">
+          <div class="gallery-overlay">
+            <i class="bi bi-zoom-in gallery-icon"></i>
+            <h6>Sate Ayam Madura</h6>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+          <img src="img/gado-gado.png" alt="Gado-gado Jakarta">
+          <div class="gallery-overlay">
+            <i class="bi bi-zoom-in gallery-icon"></i>
+            <h6>Gado-gado Jakarta</h6>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal">
+          <img src="img/es-cendol.png" alt="Es Cendol Dawet Segar">
+          <div class="gallery-overlay">
+            <i class="bi bi-zoom-in gallery-icon"></i>
+            <h6>Es Cendol Dawet Segar</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- More Photos Section -->
+  <section class="section-padding" style="background: var(--off-white);">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <div class="section-badge"><i class="bi bi-image"></i> Suasana</div>
+        <h2>Suasana <span class="text-accent">Warung</span> Kami</h2>
+        <p>Tempat nyaman untuk menikmati hidangan favorit Anda</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-8" data-aos="fade-right">
+          <div class="gallery-item" style="aspect-ratio:16/9;" data-bs-toggle="modal" data-bs-target="#galleryModal">
+            <img src="img/hero-food.png" alt="Interior Warung" style="height:100%;">
+            <div class="gallery-overlay">
+              <i class="bi bi-zoom-in gallery-icon"></i>
+              <h6>Suasana Warung</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-left">
+          <div class="gallery-item mb-4" style="aspect-ratio:1/1;" data-bs-toggle="modal" data-bs-target="#galleryModal">
+            <img src="img/sate-ayam.png" alt="Proses Memasak" style="height:100%;">
+            <div class="gallery-overlay">
+              <i class="bi bi-zoom-in gallery-icon"></i>
+              <h6>Proses Memasak</h6>
+            </div>
+          </div>
+          <div class="gallery-item" style="aspect-ratio:1/1;" data-bs-toggle="modal" data-bs-target="#galleryModal">
+            <img src="img/gado-gado.png" alt="Bahan Segar" style="height:100%;">
+            <div class="gallery-overlay">
+              <i class="bi bi-zoom-in gallery-icon"></i>
+              <h6>Bahan Segar</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container position-relative">
+      <h2 data-aos="fade-up">Tertarik Mencoba?</h2>
+      <p data-aos="fade-up" data-aos-delay="100">Pesan sekarang dan rasakan kelezatannya sendiri!</p>
+      <a href="order.html" class="btn btn-accent btn-lg" data-aos="fade-up" data-aos-delay="200">
+        <i class="bi bi-bag-check me-2"></i>Pesan Sekarang
+      </a>
+    </div>
+  </section>
+
+  <!-- Gallery Modal / Lightbox -->
+  <div class="modal fade modal-gallery" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+          <img src="" alt="" id="galleryModalImg" class="img-fluid">
+          <h5 id="galleryModalLabel" class="text-white mt-3"></h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand"><div class="brand-icon">🍽️</div><span>WarungNusantara</span></div>
+          <p>Menyajikan cita rasa kuliner Nusantara yang autentik dan lezat sejak 2018.</p>
+          <div class="social-links">
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-whatsapp"></i></a>
+            <a href="#"><i class="bi bi-tiktok"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5>Navigasi</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right"></i> Beranda</a></li>
+            <li><a href="menu.html"><i class="bi bi-chevron-right"></i> Menu</a></li>
+            <li><a href="order.html"><i class="bi bi-chevron-right"></i> Pemesanan</a></li>
+            <li><a href="galeri.html"><i class="bi bi-chevron-right"></i> Galeri</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right"></i> Tentang</a></li>
+            <li><a href="kontak.html"><i class="bi bi-chevron-right"></i> Kontak</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Menu Populer</h5>
+          <ul class="footer-links">
+            <li><a href="menu.html"><i class="bi bi-chevron-right"></i> Nasi Goreng Spesial</a></li>
+            <li><a href="menu.html"><i class="bi bi-chevron-right"></i> Rendang Padang</a></li>
+            <li><a href="menu.html"><i class="bi bi-chevron-right"></i> Sate Ayam Madura</a></li>
+            <li><a href="menu.html"><i class="bi bi-chevron-right"></i> Es Cendol Dawet</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Kontak Kami</h5>
+          <div class="footer-contact-item"><i class="bi bi-geo-alt-fill"></i><span>Jl. Raya Gunung Anyar No. 73, Surabaya</span></div>
+          <div class="footer-contact-item"><i class="bi bi-telephone-fill"></i><span>+62 812-3456-7890</span></div>
+          <div class="footer-contact-item"><i class="bi bi-envelope-fill"></i><span>info@warungnusantara.id</span></div>
+          <div class="footer-contact-item"><i class="bi bi-clock-fill"></i><span>Setiap Hari, 08:00 - 22:00 WIB</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom"><div class="container"><p>Copyright &copy; 2025 <a href="index.html">WarungNusantara</a>. All rights reserved.</p></div></div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top"><i class="bi bi-arrow-up"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WarungNusantara - Cita Rasa Kuliner Nusantara</title>
+  <meta name="description" content="WarungNusantara menyajikan cita rasa kuliner Nusantara yang autentik dan lezat. Nikmati Nasi Goreng, Rendang, Sate Ayam, dan masih banyak lagi.">
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-spinner"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <div class="brand-icon">🍽️</div>
+        WarungNusantara
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="order.html">Pemesanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg">
+      <img src="img/hero-food.png" alt="Indonesian Food Spread">
+    </div>
+    <div class="hero-particles">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="bi bi-star-fill"></i> UMKM Kuliner Nusantara
+      </div>
+      <h1>Cita Rasa<br><span class="text-accent" id="typingText">Lezat</span><br>Nusantara</h1>
+      <p class="hero-desc">Nikmati kelezatan masakan tradisional Indonesia yang diracik dengan bumbu pilihan dan cinta. Dari Sabang sampai Merauke, semua ada di sini.</p>
+      <div class="hero-buttons">
+        <a href="menu.html" class="btn btn-accent btn-lg">
+          <i class="bi bi-grid-3x3-gap me-2"></i>Lihat Menu
+        </a>
+        <a href="order.html" class="btn btn-outline-custom btn-lg">
+          <i class="bi bi-bag-check me-2"></i>Pesan Sekarang
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number counter" data-target="50" data-suffix="+">0</span>
+          <span class="stat-label">Menu Pilihan</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number counter" data-target="5000" data-suffix="+">0</span>
+          <span class="stat-label">Pelanggan Puas</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number counter" data-target="4" data-suffix=".8★">0</span>
+          <span class="stat-label">Rating Google</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Unggulan Section -->
+  <section class="section-padding" id="menuUnggulan">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <div class="section-badge"><i class="bi bi-fire"></i> Favorit</div>
+        <h2>Menu <span class="text-accent">Unggulan</span> Kami</h2>
+        <p>Pilihan terbaik yang paling digemari pelanggan setia WarungNusantara</p>
+      </div>
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="menu-card">
+            <div class="card-img-wrapper">
+              <img src="img/nasi-goreng.png" alt="Nasi Goreng Spesial">
+              <span class="card-badge"><i class="bi bi-fire me-1"></i>Best Seller</span>
+              <span class="card-price">Rp 25.000</span>
+            </div>
+            <div class="card-body">
+              <h5>Nasi Goreng Spesial</h5>
+              <p>Nasi goreng dengan bumbu rahasia, telur mata sapi, ayam suwir, dan kerupuk udang renyah.</p>
+              <a href="order.html" class="btn btn-primary-custom btn-sm">
+                <i class="bi bi-cart-plus me-1"></i>Pesan
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="menu-card">
+            <div class="card-img-wrapper">
+              <img src="img/rendang.png" alt="Rendang Padang">
+              <span class="card-badge"><i class="bi bi-award me-1"></i>Premium</span>
+              <span class="card-price">Rp 35.000</span>
+            </div>
+            <div class="card-body">
+              <h5>Rendang Padang</h5>
+              <p>Daging sapi pilihan dimasak slow-cook dengan santan dan rempah khas Minang yang kaya rasa.</p>
+              <a href="order.html" class="btn btn-primary-custom btn-sm">
+                <i class="bi bi-cart-plus me-1"></i>Pesan
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="menu-card">
+            <div class="card-img-wrapper">
+              <img src="img/sate-ayam.png" alt="Sate Ayam Madura">
+              <span class="card-badge"><i class="bi bi-heart-fill me-1"></i>Favorit</span>
+              <span class="card-price">Rp 28.000</span>
+            </div>
+            <div class="card-body">
+              <h5>Sate Ayam Madura</h5>
+              <p>Sate ayam empuk dengan bumbu kacang khas Madura, disajikan dengan lontong dan acar.</p>
+              <a href="order.html" class="btn btn-primary-custom btn-sm">
+                <i class="bi bi-cart-plus me-1"></i>Pesan
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5" data-aos="fade-up">
+        <a href="menu.html" class="btn btn-outline-custom" style="color:var(--primary);border-color:var(--primary);">
+          Lihat Semua Menu <i class="bi bi-arrow-right ms-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-6 col-lg-3" data-aos="fade-up">
+          <div class="stat-box">
+            <div class="stat-icon"><i class="bi bi-cup-hot-fill"></i></div>
+            <span class="counter" data-target="50" data-suffix="+">0</span>
+            <span class="stat-label">Menu Varian</span>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="stat-box">
+            <div class="stat-icon"><i class="bi bi-people-fill"></i></div>
+            <span class="counter" data-target="5000" data-suffix="+">0</span>
+            <span class="stat-label">Pelanggan </span>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="stat-box">
+            <div class="stat-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <span class="counter" data-target="3">0</span>
+            <span class="stat-label">Cabang</span>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="stat-box">
+            <div class="stat-icon"><i class="bi bi-calendar-check-fill"></i></div>
+            <span class="counter" data-target="8" data-suffix=" Tahun">0</span>
+            <span class="stat-label">Pengalaman</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kenapa Kami Section -->
+  <section class="section-padding" id="kenapaKami">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <div class="section-badge"><i class="bi bi-patch-check-fill"></i> Keunggulan</div>
+        <h2>Kenapa Memilih <span class="text-accent">Kami?</span></h2>
+        <p>Komitmen kami untuk menyajikan yang terbaik bagi pelanggan</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-droplet-fill"></i></div>
+            <h5>Bahan Segar</h5>
+            <p>Menggunakan bahan-bahan segar pilihan yang didatangkan setiap hari dari pasar lokal.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-shield-check"></i></div>
+            <h5>Higienis & Bersih</h5>
+            <p>Dapur dan area masak selalu terjaga kebersihannya sesuai standar kesehatan.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-fire"></i></div>
+            <h5>Resep Tradisional</h5>
+            <p>Resep turun-temurun yang terjaga keasliannya, dimasak dengan penuh cinta.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-award-fill"></i></div>
+            <h5>Bersertifikat</h5>
+            <p>Telah tersertifikasi halal dan memenuhi standar keamanan pangan BPOM.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="section-padding" style="background: var(--off-white);" id="testimoni">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <div class="section-badge"><i class="bi bi-chat-heart-fill"></i> Testimoni</div>
+        <h2>Apa Kata <span class="text-accent">Pelanggan?</span></h2>
+        <p>Pengalaman pelanggan setia kami</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p>"Nasi Goreng Spesialnya juara! Bumbu meresap sempurna dan porsinya sangat memuaskan. Pasti balik lagi!"</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar">A</div>
+              <div class="reviewer-info">
+                <h6>Aisyah Putri</h6>
+                <small>Pelanggan Setia</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p>"Rendang Padangnya otentik banget! Rasanya persis seperti buatan nenek di kampung. Recommended!"</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar">B</div>
+              <div class="reviewer-info">
+                <h6>Budi Santoso</h6>
+                <small>Food Blogger</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </div>
+            <p>"Tempatnya bersih, pelayanannya ramah, dan makanannya enak. Es Cendolnya sangat segar!"</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar">C</div>
+              <div class="reviewer-info">
+                <h6>Citra Dewi</h6>
+                <small>Mahasiswa UPN</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container position-relative">
+      <h2 data-aos="fade-up">Lapar? Pesan Sekarang!</h2>
+      <p data-aos="fade-up" data-aos-delay="100">Nikmati kelezatan masakan kami langsung di rumah Anda</p>
+      <a href="order.html" class="btn btn-accent btn-lg" data-aos="fade-up" data-aos-delay="200">
+        <i class="bi bi-bag-check me-2"></i>Pesan Sekarang
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Brand -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand">
+            <div class="brand-icon">🍽️</div>
+            <span>WarungNusantara</span>
+          </div>
+          <p>Menyajikan cita rasa kuliner Nusantara yang autentik dan lezat sejak 2018. Dari dapur kami untuk keluarga Anda.</p>
+          <div class="social-links">
+            <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            <a href="#" title="TikTok"><i class="bi bi-tiktok"></i></a>
+            <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6">
+          <h5>Navigasi</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right"></i> Beranda</a></li>
+            <li><a href="menu.html"><i class="bi bi-chevron-right"></i> Menu</a></li>
+            <li><a href="order.html"><i class="bi bi-chevron-right"></i> Pemesanan</a></li>
+            <li><a href="galeri.html"><i class="bi bi-chevron-right"></i> Galeri</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right"></i> Tentang</a></li>
+            <li><a href="kontak.html"><i class="bi bi-chevron-right"></i> Kontak</a></li>
+          </ul>
+        </div>
+        <!-- Menu Popular -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Menu Populer</h5>
+          <ul class="footer-links">
+            <li><a href="menu.html"><i class="bi bi-chevron-right"></i> Nasi Goreng Spesial</a></li>
+            <li><a href="menu.html"><i class="bi bi-chevron-right"></i> Rendang Padang</a></li>
+            <li><a href="menu.html"><i class="bi bi-chevron-right"></i> Sate Ayam Madura</a></li>
+            <li><a href="menu.html"><i class="bi bi-chevron-right"></i> Es Cendol Dawet</a></li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Kontak Kami</h5>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>Jl. Raya Gunung Anyar No. 73, Surabaya, Jawa Timur 60294</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <span>+62 812-3456-7890</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <span>info@warungnusantara.id</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock-fill"></i>
+            <span>Setiap Hari, 08:00 - 22:00 WIB</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>Copyright &copy; 2025 <a href="index.html">WarungNusantara</a>. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="back-to-top" title="Kembali ke atas">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>

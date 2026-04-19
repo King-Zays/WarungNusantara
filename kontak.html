@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak Kami - WarungNusantara</title>
+  <meta name="description" content="Hubungi WarungNusantara untuk pemesanan, kerjasama, atau pertanyaan. Kami siap membantu Anda!">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="preloader"><div class="preloader-spinner"></div></div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <div class="brand-icon">🍽️</div>
+        WarungNusantara
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="order.html">Pemesanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+        <li class="breadcrumb-item active">Kontak</li>
+      </ol>
+    </nav>
+    <h1>Hubungi <span style="color:var(--accent);">Kami</span></h1>
+    <p>Kami siap membantu Anda kapan saja</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section-padding form-section">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Contact Form -->
+        <div class="col-lg-7" data-aos="fade-right">
+          <div class="form-card">
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <div style="width:50px;height:50px;background:var(--primary-lighter);border-radius:12px;display:flex;align-items:center;justify-content:center;">
+                <i class="bi bi-envelope-fill fs-4" style="color:var(--primary);"></i>
+              </div>
+              <div>
+                <h4 class="mb-0">Kirim Pesan</h4>
+                <small class="text-muted">Isi formulir di bawah untuk menghubungi kami</small>
+              </div>
+            </div>
+
+            <form id="contactForm">
+              <div class="row g-3">
+                <!-- Nama -->
+                <div class="col-md-6">
+                  <div class="field-group">
+                    <label class="field-label" for="kontakNama">
+                      <i class="bi bi-person"></i>Nama Lengkap <span class="required">*</span>
+                    </label>
+                    <input type="text" class="form-control" id="kontakNama" placeholder="Masukkan nama lengkap" required>
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-6">
+                  <div class="field-group">
+                    <label class="field-label" for="kontakEmail">
+                      <i class="bi bi-envelope"></i>Email <span class="required">*</span>
+                    </label>
+                    <input type="email" class="form-control" id="kontakEmail" placeholder="contoh@email.com" required>
+                  </div>
+                </div>
+
+                <!-- Subjek -->
+                <div class="col-12">
+                  <div class="field-group">
+                    <label class="field-label" for="kontakSubjek">
+                      <i class="bi bi-chat-text"></i>Subjek <span class="required">*</span>
+                    </label>
+                    <input type="text" class="form-control" id="kontakSubjek" placeholder="Tulis subjek pesan Anda" required>
+                  </div>
+                </div>
+
+                <!-- Pesan -->
+                <div class="col-12">
+                  <div class="field-group">
+                    <label class="field-label" for="kontakPesan">
+                      <i class="bi bi-pencil"></i>Pesan Anda <span class="required">*</span>
+                    </label>
+                    <textarea class="form-control" id="kontakPesan" placeholder="Tulis pesan atau pertanyaan Anda di sini..." style="height:150px" required></textarea>
+                  </div>
+                </div>
+
+                <!-- Submit -->
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-primary-custom btn-lg w-100">
+                    <i class="bi bi-send-fill me-2"></i>Kirim Pesan
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Contact Info Sidebar -->
+        <div class="col-lg-5" data-aos="fade-left">
+          <div class="contact-info-card">
+            <h4><i class="bi bi-geo-alt me-2"></i>Info Kontak</h4>
+
+            <div class="contact-info-item">
+              <div class="info-icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <div>
+                <h6>Alamat</h6>
+                <p>Jl. Raya Gunung Anyar No. 73,<br>Surabaya, Jawa Timur 60294</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="info-icon"><i class="bi bi-telephone-fill"></i></div>
+              <div>
+                <h6>Telepon</h6>
+                <p>+62 812-3456-7890<br>+62 31-8765-4321</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="info-icon"><i class="bi bi-envelope-fill"></i></div>
+              <div>
+                <h6>Email</h6>
+                <p>info@warungnusantara.id<br>order@warungnusantara.id</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="info-icon"><i class="bi bi-clock-fill"></i></div>
+              <div>
+                <h6>Jam Operasional</h6>
+                <p>Setiap Hari<br>08:00 - 22:00 WIB</p>
+              </div>
+            </div>
+
+            <hr style="border-color:rgba(255,255,255,0.15);">
+
+            <h6 class="mb-3" style="color:var(--accent);">Ikuti Kami</h6>
+            <div class="social-links">
+              <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+              <a href="#" title="TikTok"><i class="bi bi-tiktok"></i></a>
+              <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="section-padding" style="padding-bottom:0;">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <div class="section-badge"><i class="bi bi-pin-map-fill"></i> Lokasi</div>
+        <h2>Temukan <span class="text-accent">Lokasi</span> Kami</h2>
+        <p>Kunjungi langsung warung kami di Surabaya</p>
+      </div>
+    </div>
+    <div data-aos="fade-up">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.3!2d112.78!3d-7.33!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMTknNDguMCJTIDExMsKwNDYnNDguMCJF!5e0!3m2!1sid!2sid!4v1690000000000!5m2!1sid!2sid"
+        width="100%"
+        height="400"
+        style="border:0; filter: saturate(0.8) contrast(1.1);"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Lokasi WarungNusantara">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <div class="section-badge"><i class="bi bi-question-circle-fill"></i> FAQ</div>
+        <h2>Pertanyaan <span class="text-accent">Umum</span></h2>
+        <p>Jawaban untuk pertanyaan yang sering ditanyakan</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8" data-aos="fade-up">
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item" style="border-radius:var(--radius-md);margin-bottom:12px;border:1px solid var(--gray-200);overflow:hidden;">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" style="font-family:var(--font-heading);font-weight:600;">
+                  Bagaimana cara memesan makanan?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Anda bisa memesan melalui halaman <a href="order.html">Pemesanan</a> di website kami, atau langsung menghubungi kami via WhatsApp di +62 812-3456-7890. Kami juga tersedia di GrabFood dan GoFood.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item" style="border-radius:var(--radius-md);margin-bottom:12px;border:1px solid var(--gray-200);overflow:hidden;">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" style="font-family:var(--font-heading);font-weight:600;">
+                  Apakah tersedia layanan pengiriman?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Ya! Kami melayani pengiriman untuk area Surabaya dan sekitarnya dengan estimasi 30-60 menit. Ongkir dihitung berdasarkan jarak dari lokasi warung kami.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item" style="border-radius:var(--radius-md);margin-bottom:12px;border:1px solid var(--gray-200);overflow:hidden;">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" style="font-family:var(--font-heading);font-weight:600;">
+                  Apakah makanan sudah halal?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Tentu! Semua menu kami telah tersertifikasi halal oleh MUI dan terdaftar di BPOM. Kami sangat memperhatikan kualitas dan keamanan pangan.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item" style="border-radius:var(--radius-md);margin-bottom:12px;border:1px solid var(--gray-200);overflow:hidden;">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" style="font-family:var(--font-heading);font-weight:600;">
+                  Apakah bisa pesan untuk acara catering?
+                </button>
+              </h2>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Bisa! Kami melayani pesanan catering untuk acara kantor, ulang tahun, arisan, dan lainnya. Minimal order 20 porsi. Hubungi kami untuk info lebih lanjut dan negosiasi harga.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand"><div class="brand-icon">🍽️</div><span>WarungNusantara</span></div>
+          <p>Menyajikan cita rasa kuliner Nusantara yang autentik dan lezat sejak 2018.</p>
+          <div class="social-links">
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-whatsapp"></i></a>
+            <a href="#"><i class="bi bi-tiktok"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5>Navigasi</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right"></i> Beranda</a></li>
+            <li><a href="menu.html"><i class="bi bi-chevron-right"></i> Menu</a></li>
+            <li><a href="order.html"><i class="bi bi-chevron-right"></i> Pemesanan</a></li>
+            <li><a href="galeri.html"><i class="bi bi-chevron-right"></i> Galeri</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right"></i> Tentang</a></li>
+            <li><a href="kontak.html"><i class="bi bi-chevron-right"></i> Kontak</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Menu Populer</h5>
+          <ul class="footer-links">
+            <li><a href="menu.html"><i class="bi bi-chevron-right"></i> Nasi Goreng Spesial</a></li>
+            <li><a href="menu.html"><i class="bi bi-chevron-right"></i> Rendang Padang</a></li>
+            <li><a href="menu.html"><i class="bi bi-chevron-right"></i> Sate Ayam Madura</a></li>
+            <li><a href="menu.html"><i class="bi bi-chevron-right"></i> Es Cendol Dawet</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Kontak Kami</h5>
+          <div class="footer-contact-item"><i class="bi bi-geo-alt-fill"></i><span>Jl. Raya Gunung Anyar No. 73, Surabaya</span></div>
+          <div class="footer-contact-item"><i class="bi bi-telephone-fill"></i><span>+62 812-3456-7890</span></div>
+          <div class="footer-contact-item"><i class="bi bi-envelope-fill"></i><span>info@warungnusantara.id</span></div>
+          <div class="footer-contact-item"><i class="bi bi-clock-fill"></i><span>Setiap Hari, 08:00 - 22:00 WIB</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom"><div class="container"><p>Copyright &copy; 2025 <a href="index.html">WarungNusantara</a>. All rights reserved.</p></div></div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top"><i class="bi bi-arrow-up"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
